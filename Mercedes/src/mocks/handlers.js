@@ -1,9 +1,15 @@
-import { data } from "./data";
+import { sedan, suv, couples } from "./data";
 import { rest } from "msw";
 
 const handlers = [
-    rest.get("/cars", (req, res, ctx) => {
-        return res(ctx.delay(1000), ctx.status(200), ctx.json(data))
+    rest.get("/sedan", (req, res, ctx) => {
+        return res(ctx.delay(1000), ctx.status(200), ctx.json(sedan))
+    }),
+    rest.get("/suv", (req, res, ctx) => {
+        return res(ctx.delay(1000), ctx.status(200), ctx.json(suv))
+    }),
+    rest.get("/couples", (req, res, ctx) => {
+        return res(ctx.delay(1000), ctx.status(200), ctx.json(couples))
     }),
     // rest.get("/cars/:id", (req, res, ctx) => {
     //     const {id} =req.params;

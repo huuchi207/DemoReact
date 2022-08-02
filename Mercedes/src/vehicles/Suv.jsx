@@ -1,11 +1,11 @@
 import React from "react";
 import { useOutletContext } from "react-router-dom";
-import Carlists from "../component/Homepage/Carlist/Carlists";
+import Suvlists from "../component/Homepage/Carlist/Suvlists";
 function Suv(){
-    const {cars} = useOutletContext();
+    const {suv} = useOutletContext();
     return (
         <div>
-            <Carlists cars={cars} />
+            <Suvlists suv={suv} />
         </div>
     )
 }

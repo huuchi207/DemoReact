@@ -4,7 +4,7 @@ import styles from './Carlist.module.css'
 
 function Car({ id, image, name, price }) {
     return (
-        <Link style={{textDecoration: 'none', paddingTop: '80px'}} to={`/car/${id}`}>
+        <Link className={styles.link} to={`/car/${id}`}>
             
             <div className={styles.containerImg}>
                 <div>

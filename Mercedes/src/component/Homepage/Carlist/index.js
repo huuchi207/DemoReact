@@ -8,7 +8,7 @@ function Carlist(props) {
         {
             "id": 1,
             "name": "Sedan",
-            "src": "sedan"
+            "src": "/"
         },
         {
             "id": 2,

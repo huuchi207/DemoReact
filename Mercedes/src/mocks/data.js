@@ -1,4 +1,4 @@
-const data = [
+const sedan = [
   {
     "id": 1,
     "name": "EQS",
@@ -31,10 +31,65 @@ const data = [
   },
   {
     "id": 6,
-    "name": "Mercedes-Maybach S-Class",
+    "name": "Maybach S-Class",
     "price": "Giá từ 8.199.000.000đ",
     "image": "img/carline/maybachsclass.png",
   },
 ]
 
-export { data } 
+const suv = [
+  {
+    "id": 1,
+    "name": "EQB",
+    "price": "Sắp ra mắt",
+    "image": "img/carline/eqb.png",
+  },
+  {
+    "id": 2,
+    "name": "GLB",
+    "price": "Giá từ 1.999.000.000đ",
+    "image": "img/carline/glb.png",
+  },
+  {
+    "id": 3,
+    "name": "GLC",
+    "price": "Giá từ 1.799.000.000đ",
+    "image": "img/carline/glc.png",
+  },
+  {
+    "id": 4,
+    "name": "GLE",
+    "price": "Giá từ 4.450.000.000đ",
+    "image": "img/carline/gle.png",
+  },
+  {
+    "id": 5,
+    "name": "GLS",
+    "price": "Giá từ 5.059.000.000đ",
+    "image": "img/carline/gls.png",
+  },
+  {
+    "id": 6,
+    "name": "G-Class",
+    "price": "Giá từ 10.199.000.000đ",
+    "image": "img/carline/gclass.png",
+  },
+]
+
+const couples = [
+  {
+    "id": 1,
+    "name": "MERCEDES-AMG GT COUPES",
+    "price": "Giá từ 11.599.000.000đ",
+    "image": "img/carline/gtcouple.png",
+  },
+  {
+    "id": 2,
+    "name": "MERCEDES-AMG GT COUPES",
+    "price": "Giá từ 6.639.000.000đ",
+    "image": "img/carline/gt4couple.png",
+  },
+  
+]
+
+export { sedan, suv ,couples} 

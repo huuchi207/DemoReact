@@ -8,6 +8,7 @@ import Suv from './vehicles/Suv'
 import Sedan from './vehicles/Sedan'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {worker} from "./mocks/browser"
+import Couples from './vehicles/Couples';
 worker.start({
   onUnhandledRequest: "bypass",
 });
@@ -19,7 +20,11 @@ root.render(
       <Routes>
         <Route path='/' element={<App />}>
           <Route path='suv' element={<Suv />}></Route>
-          <Route path='sedan' element={<Sedan />}></Route>
+          <Route path='/' element={<Sedan />}></Route>
+          <Route path='couples' element={<Couples />}></Route>
+          <Route path='maybach' element={<Suv />}></Route>
+          <Route path='sport' element={<Sedan />}></Route>
+          <Route path='convetible' element={<Couples />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

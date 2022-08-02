@@ -32,13 +32,35 @@ function App() {
       "name": "Convetible",
     },
   ]
-  const [cars, setCars] = useState([])
+  const [sedan, setSedan] = useState([])
 
   useEffect(() => {
     try {
-      fetch("/cars")
+      fetch("/sedan")
         .then((res) => res.json())
-        .then(setCars);
+        .then(setSedan);
+    } catch (error) {
+      console.log("eror")
+    }
+  }, [])
+  const [suv, setSuv] = useState([])
+
+  useEffect(() => {
+    try {
+      fetch("/suv")
+        .then((res) => res.json())
+        .then(setSuv);
+    } catch (error) {
+      console.log("eror")
+    }
+  }, [])
+  
+  const [couples, setCouples] = useState([])
+  useEffect(() => {
+    try {
+      fetch("/couples")
+        .then((res) => res.json())
+        .then(setCouples);
     } catch (error) {
       console.log("eror")
     }
@@ -65,7 +87,8 @@ function App() {
           }}>Các dòng xe Mercedes-Benz</div>
         <Carlist />
         <div>
-          <Outlet context={{ cars }} />
+          <Outlet context={{ sedan , suv , couples }} />
+          
         </div>
       </div>
     </ div>
