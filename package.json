@@ -2,7 +2,6 @@
   "name": "react-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://hoangquan2012.github.io/Project/",
   "dependencies": {
     "@glidejs/glide": "^3.5.2",
     "@testing-library/jest-dom": "^5.16.4",
@@ -51,6 +50,6 @@
     "prettier": "2.7.1"
   },
   "msw": {
-    "workerDirectory": "public"
+    "workerDirectory": "build"
   }
 }
