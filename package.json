@@ -50,6 +50,6 @@
     "prettier": "2.7.1"
   },
   "msw": {
-    "workerDirectory": "build"
+    "workerDirectory": "public"
   }
 }
